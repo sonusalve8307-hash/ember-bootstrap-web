@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EMBER — Menu</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark ember-navbar">
+
+        <div class="container">
+
+            <a class="navbar-brand ember-logo" href="index.html">
+                EMBER
+            </a>
+
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#emberNavbar"
+                aria-controls="emberNavbar" aria-expanded="false" aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+
+            <div class="collapse navbar-collapse" id="emberNavbar">
+
+                <ul class="navbar-nav mx-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="menu.html">
+                            Menu
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#story">
+                            Our Story
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#gallery">
+                            Gallery
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#visit">
+                            Visit Us
+                        </a>
+                    </li>
+
+                </ul>
+
+
+                <a href="index.html#reserve" class="btn ember-nav-btn">
+
+                    Reserve a Table
+
+                    <i class="bi bi-arrow-up-right"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <!-- MENU HERO -->
+
+    <section class="ember-menu-hero">
+
+        <div class="container">
+
+            <div class="menu-hero-content">
+
+                <p class="section-label">
+                    EMBER MENU
+                </p>
+
+                <h1>
+                    Made for every
+                    <span>kind of moment.</span>
+                </h1>
+
+                <p>
+                    From slow morning coffees to indulgent desserts,
+                    explore everything we craft at EMBER.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="ember-menu" id="menu">
+
+        <div class="container py-5 py-lg-6">
+
+            <!-- HEADING -->
+
+            <div class="section-heading text-center mb-4">
+
+                <p class="section-label">
+                    SIGNATURE MENU
+                </p>
+
+                <h2>
+                    Savor the art & science
+                    <span>of every cup.</span>
+                </h2>
+
+                <p class="section-description">
+                    Carefully crafted drinks, freshly baked bites,
+                    and seasonal favorites made to be enjoyed slowly.
+                </p>
+
+            </div>
+
+
+            <!-- MENU FILTERS -->
+
+            <ul class="nav nav-pills justify-content-center ember-menu-tabs mb-5" id="menuTabs" role="tablist">
+
+                <li class="nav-item" role="presentation">
+
+                    <button class="nav-link active" id="coffee-tab" data-bs-toggle="pill" data-bs-target="#coffee-menu"
+                        type="button" role="tab">
+
+                        Coffee
+
+                    </button>
+
+                </li>
+
+                <li class="nav-item" role="presentation">
+
+                    <button class="nav-link" id="cold-tab" data-bs-toggle="pill" data-bs-target="#cold-menu"
+                        type="button" role="tab">
+
+                        Cold Drinks
+
+                    </button>
+
+                </li>
+
+                <li class="nav-item" role="presentation">
+
+                    <button class="nav-link" id="breakfast-tab" data-bs-toggle="pill" data-bs-target="#breakfast-menu"
+                        type="button" role="tab">
+
+                        Breakfast
+
+                    </button>
+
+                </li>
+
+                <li class="nav-item" role="presentation">
+
+                    <button class="nav-link" id="dessert-tab" data-bs-toggle="pill" data-bs-target="#dessert-menu"
+                        type="button" role="tab">
+
+                        Desserts
+
+                    </button>
+
+                </li>
+
+            </ul>
+
+
+            <!-- MENU CONTENT -->
+
+            <div class="tab-content" id="menuTabContent">
+
+
+                <!-- =========================
+                 COFFEE
+            ========================== -->
+
+                <div class="tab-pane fade show active" id="coffee-menu" role="tabpanel">
+
+                    <div class="row g-4">
+
+
+                        <!-- ITEM 1 -->
+
+                        <div class="col-sm-6 col-lg-3">
+
+                            <div class="menu-card">
+
+                                <div class="menu-image-wrapper">
+
+                                    <img src="images/menu-cappuccino.jpg" alt="Ember Cappuccino">
+
+                                    <span class="menu-tag">
+                                        SIGNATURE
+                                    </span>
+
+                                </div>
+
+                                <div class="menu-card-body">
+
+                                    <h3>Cappuccino</h3>
+
+                                    <p>
+                                        Rich espresso, silky milk
+                                        and delicate foam.
+                                    </p>
+
+                                    <div class="menu-card-footer">
+
+                                        <strong>₹220</strong>
+
+                                        <button class="menu-add-btn" aria-label="Add Cappuccino">
+
+                                            <i class="bi bi-plus"></i>
+
+                                        </button>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- ITEM 2 -->
+
+                        <div class="col-sm-6 col-lg-3">
+
+                            <div class="menu-card">
+
+                                <div class="menu-image-wrapper">
+
+                                    <img src="images/menu-flatwhite.jpg" alt="Ember Flat White">
+
+                                </div>
+
+                                <div class="menu-card-body">
+
+                                    <h3>Flat White</h3>
+
+                                    <p>
+                                        Double espresso with
+                                        velvety microfoam.
+                                    </p>
+
+                                    <div class="menu-card-footer">
+
+                                        <strong>₹240</strong>
+
+                                        <button class="menu-add-btn" aria-label="Add Flat White">
+
+                                            <i class="bi bi-plus"></i>
+
+                                        </button>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- ITEM 3 -->
+
+                        <div class="col-sm-6 col-lg-3">
+
+                            <div class="menu-card">
+
+                                <div class="menu-image-wrapper">
+
+                                    <img src="images/menu-latte.jpg" alt="Ember Latte">
+
+                                </div>
+
+                                <div class="menu-card-body">
+
+                                    <h3>Honey Latte</h3>
+
+                                    <p>
+                                        Smooth espresso,
+                                        steamed milk and honey.
+                                    </p>
+
+                                    <div class="menu-card-footer">
+
+                                        <strong>₹250</strong>
+
+                                        <button class="menu-add-btn" aria-label="Add Honey Latte">
+
+                                            <i class="bi bi-plus"></i>
+
+                                        </button>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- ITEM 4 -->
+
+                        <div class="col-sm-6 col-lg-3">
+
+                            <div class="menu-card">
+
+                                <div class="menu-image-wrapper">
+
+                                    <img src="images/menu-mocha.jpg" alt="Ember Mocha">
+
+                                    <span class="menu-tag">
+                                        FAVORITE
+                                    </span>
+
+                                </div>
+
+                                <div class="menu-card-body">
+
+                                    <h3>Dark Mocha</h3>
+
+                                    <p>
+                                        Dark chocolate,
+                                        espresso and steamed milk.
+                                    </p>
+
+                                    <div class="menu-card-footer">
+
+                                        <strong>₹270</strong>
+
+                                        <button class="menu-add-btn" aria-label="Add Dark Mocha">
+
+                                            <i class="bi bi-plus"></i>
+
+                                        </button>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =========================
+                 COLD DRINKS
+            ========================== -->
+
+                <div class="tab-pane fade" id="cold-menu" role="tabpanel">
+
+                    <div class="row g-4">
+
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="menu-card">
+
+                                <div class="menu-image-wrapper">
+                                    <img src="images/menu-coldbrew.jpg" alt="Cold Brew">
+                                </div>
+
+                                <div class="menu-card-body">
+
+                                    <h3>Cold Brew</h3>
+
+                                    <p>
+                                        Slow-steeped for a
+                                        smooth, naturally sweet finish.
+                                    </p>
+
+                                    <div class="menu-card-footer">
+                                        <strong>₹260</strong>
+
+                                        <button class="menu-add-btn">
+                                            <i class="bi bi-plus"></i>
+                                        </button>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="menu-card">
+
+                                <div class="menu-image-wrapper">
+                                    <img src="images/menu-icedlatte.jpg" alt="Iced Latte">
+                                </div>
+
+                                <div class="menu-card-body">
+
+                                    <h3>Iced Latte</h3>
+
+                                    <p>
+                                        Chilled espresso,
+                                        creamy milk and ice.
+                                    </p>
+
+                                    <div class="menu-card-footer">
+                                        <strong>₹250</strong>
+
+                                        <button class="menu-add-btn">
+                                            <i class="bi bi-plus"></i>
+                                        </button>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="menu-card">
+
+                                <div class="menu-image-wrapper">
+                                    <img src="images/menu-frappe.jpg" alt="Chocolate Frappe">
+                                </div>
+
+                                <div class="menu-card-body">
+
+                                    <h3>Mocha Frappe</h3>
+
+                                    <p>
+                                        Blended coffee,
+                                        chocolate and cold cream.
+                                    </p>
+
+                                    <div class="menu-card-footer">
+                                        <strong>₹290</strong>
+
+                                        <button class="menu-add-btn">
+                                            <i class="bi bi-plus"></i>
+                                        </button>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="menu-card">
+
+                                <div class="menu-image-wrapper">
+                                    <img src="images/menu-matcha.jpg" alt="Iced Matcha">
+                                </div>
+
+                                <div class="menu-card-body">
+
+                                    <h3>Iced Matcha</h3>
+
+                                    <p>
+                                        Ceremonial matcha
+                                        with chilled creamy milk.
+                                    </p>
+
+                                    <div class="menu-card-footer">
+                                        <strong>₹280</strong>
+
+                                        <button class="menu-add-btn">
+                                            <i class="bi bi-plus"></i>
+                                        </button>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =========================
+                 BREAKFAST
+            ========================== -->
+
+                <div class="tab-pane fade" id="breakfast-menu" role="tabpanel">
+
+                    <div class="row g-4">
+
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="menu-card">
+
+                                <div class="menu-image-wrapper">
+                                    <img src="images/menu-croissant.jpg" alt="Butter Croissant">
+                                </div>
+
+                                <div class="menu-card-body">
+
+                                    <h3>Butter Croissant</h3>
+
+                                    <p>
+                                        Flaky, buttery and
+                                        freshly baked every morning.
+                                    </p>
+
+                                    <div class="menu-card-footer">
+                                        <strong>₹180</strong>
+
+                                        <button class="menu-add-btn">
+                                            <i class="bi bi-plus"></i>
+                                        </button>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="menu-card">
+
+                                <div class="menu-image-wrapper">
+                                    <img src="images/menu-avocado.jpg" alt="Avocado Toast">
+                                </div>
+
+                                <div class="menu-card-body">
+
+                                    <h3>Avocado Toast</h3>
+
+                                    <p>
+                                        Sourdough, avocado,
+                                        herbs and chili oil.
+                                    </p>
+
+                                    <div class="menu-card-footer">
+                                        <strong>₹320</strong>
+
+                                        <button class="menu-add-btn">
+                                            <i class="bi bi-plus"></i>
+                                        </button>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="menu-card">
+
+                                <div class="menu-image-wrapper">
+                                    <img src="images/menu-pancakes.jpg" alt="Pancakes">
+                                </div>
+
+                                <div class="menu-card-body">
+
+                                    <h3>Berry Pancakes</h3>
+
+                                    <p>
+                                        Fluffy pancakes,
+                                        berries and maple syrup.
+                                    </p>
+
+                                    <div class="menu-card-footer">
+                                        <strong>₹300</strong>
+
+                                        <button class="menu-add-btn">
+                                            <i class="bi bi-plus"></i>
+                                        </button>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="menu-card">
+
+                                <div class="menu-image-wrapper">
+                                    <img src="images/menu-eggs.jpg" alt="Ember Breakfast">
+                                </div>
+
+                                <div class="menu-card-body">
+
+                                    <h3>Ember Breakfast</h3>
+
+                                    <p>
+                                        Eggs, sourdough,
+                                        greens and roasted potatoes.
+                                    </p>
+
+                                    <div class="menu-card-footer">
+                                        <strong>₹360</strong>
+
+                                        <button class="menu-add-btn">
+                                            <i class="bi bi-plus"></i>
+                                        </button>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =========================
+                 DESSERTS
+            ========================== -->
+
+                <div class="tab-pane fade" id="dessert-menu" role="tabpanel">
+
+                    <div class="row g-4">
+
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="menu-card">
+
+                                <div class="menu-image-wrapper">
+                                    <img src="images/menu-tiramisu.jpg" alt="Tiramisu">
+                                </div>
+
+                                <div class="menu-card-body">
+
+                                    <h3>Tiramisu</h3>
+
+                                    <p>
+                                        Espresso-soaked layers
+                                        with mascarpone cream.
+                                    </p>
+
+                                    <div class="menu-card-footer">
+                                        <strong>₹280</strong>
+
+                                        <button class="menu-add-btn">
+                                            <i class="bi bi-plus"></i>
+                                        </button>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="menu-card">
+
+                                <div class="menu-image-wrapper">
+                                    <img src="images/menu-cheesecake.jpg" alt="Cheesecake">
+                                </div>
+
+                                <div class="menu-card-body">
+
+                                    <h3>Basque Cheesecake</h3>
+
+                                    <p>
+                                        Creamy center with
+                                        a beautifully caramelized top.
+                                    </p>
+
+                                    <div class="menu-card-footer">
+                                        <strong>₹290</strong>
+
+                                        <button class="menu-add-btn">
+                                            <i class="bi bi-plus"></i>
+                                        </button>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="menu-card">
+
+                                <div class="menu-image-wrapper">
+                                    <img src="images/menu-brownie.jpg" alt="Chocolate Brownie">
+                                </div>
+
+                                <div class="menu-card-body">
+
+                                    <h3>Dark Brownie</h3>
+
+                                    <p>
+                                        Warm chocolate brownie
+                                        with roasted cocoa.
+                                    </p>
+
+                                    <div class="menu-card-footer">
+                                        <strong>₹220</strong>
+
+                                        <button class="menu-add-btn">
+                                            <i class="bi bi-plus"></i>
+                                        </button>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="menu-card">
+
+                                <div class="menu-image-wrapper">
+                                    <img src="images/menu-cinnamon.jpg" alt="Cinnamon Roll">
+                                </div>
+
+                                <div class="menu-card-body">
+
+                                    <h3>Cinnamon Roll</h3>
+
+                                    <p>
+                                        Soft baked roll with
+                                        cinnamon and vanilla glaze.
+                                    </p>
+
+                                    <div class="menu-card-footer">
+                                        <strong>₹200</strong>
+
+                                        <button class="menu-add-btn">
+                                            <i class="bi bi-plus"></i>
+                                        </button>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div> 
+
+        </div>
+
+    </section>
+
+    <!-- PASTE YOUR EXISTING FULL MENU SECTION HERE -->
+
+
+    <!-- FOOTER -->
+
+    <footer class="ember-footer">
+
+        <div class="container">
+
+            <div class="row g-4">
+
+                <div class="col-lg-5">
+
+                    <div class="footer-brand">
+                        EMBER
+                    </div>
+
+                    <p>
+                        Thoughtfully brewed coffee,
+                        beautifully slow moments.
+                    </p>
+
+                </div>
+
+
+                <div class="col-6 col-lg-2">
+
+                    <h6>Explore</h6>
+
+                    <a href="index.html">Home</a>
+                    <a href="menu.html">Menu</a>
+                    <a href="index.html#story">Our Story</a>
+
+                </div>
+
+
+                <div class="col-6 col-lg-2">
+
+                    <h6>Visit</h6>
+
+                    <a href="index.html#visit">Our Cafe</a>
+                    <a href="index.html#gallery">Gallery</a>
+                    <a href="index.html#reserve">Reserve</a>
+
+                </div>
+
+
+                <div class="col-lg-3">
+
+                    <h6>Follow EMBER</h6>
+
+                    <div class="footer-socials">
+
+                        <a href="#">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="bi bi-twitter-x"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                <span>
+                    © 2026 EMBER Coffee. All rights reserved.
+                </span>
+
+                <span>
+                    Crafted with intention.
+                </span>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+</body>
+
+</html>

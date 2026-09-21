@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EMBER — Coffee & Moments</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark ember-navbar">
+        <div class="container">
+
+            <a class="navbar-brand ember-logo" href="#">
+                EMBER
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#emberNavbar"
+                aria-controls="emberNavbar" aria-expanded="false" aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="emberNavbar">
+
+                <ul class="navbar-nav mx-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">
+                            Home
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="menu.html">
+                            Menu
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#story">
+                            Our Story
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">
+                            Gallery
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#visit">
+                            Visit Us
+                        </a>
+                    </li>
+
+                </ul>
+
+                <a href="#reserve" class="btn ember-nav-btn">
+                    Reserve a Table
+                    <i class="bi bi-arrow-up-right"></i>
+                </a>
+
+            </div>
+
+        </div>
+    </nav>
+
+    <section class="ember-hero">
+
+        <div class="container">
+
+            <div class="row align-items-center min-vh-100">
+
+                <!-- HERO CONTENT -->
+
+                <div class="col-lg-6">
+
+                    <div class="hero-content">
+
+                        <p class="hero-eyebrow">
+                            <span></span>
+                            SPECIALTY COFFEE • EST. 2012
+                        </p>
+
+                        <h1>
+                            Crafted for
+                            <span>slow moments.</span>
+                        </h1>
+
+                        <p class="hero-description">
+                            Thoughtfully sourced beans, carefully roasted,
+                            and brewed to make every moment worth slowing down for.
+                        </p>
+
+                        <div class="hero-buttons">
+
+                            <a href="menu.html" class="btn ember-primary-btn">
+                                Explore Menu
+                                <i class="bi bi-arrow-up-right"></i>
+                            </a>
+
+                            <a href="#story" class="btn ember-outline-btn">
+                                Our Story
+                            </a>
+
+                        </div>
+
+                        <div class="hero-meta">
+
+                            <div>
+                                <strong>12+</strong>
+                                <span>Years of Craft</span>
+                            </div>
+
+                            <div>
+                                <strong>24</strong>
+                                <span>Signature Beans</span>
+                            </div>
+
+                            <div>
+                                <strong>8</strong>
+                                <span>Unique Roasts</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- HERO IMAGE -->
+
+                <div class="col-lg-6">
+
+                    <div class="hero-image-wrapper">
+
+                        <img src="images/hero.jpg" alt="EMBER specialty coffee" class="hero-image">
+
+                        <div class="hero-image-label">
+
+                            <span class="label-dot"></span>
+
+                            <div>
+                                <small>EMBER SIGNATURE</small>
+                                <strong>Roasted with intention.</strong>
+                            </div>
+
+                        </div>
+
+                        <div class="hero-coffee-badge">
+
+                            <i class="bi bi-cup-hot"></i>
+
+                            <span>
+                                Freshly<br>
+                                Brewed
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="ember-categories py-5">
+
+        <div class="container py-lg-5">
+
+            <div class="section-heading text-center mb-5">
+
+                <p class="section-label">
+                    EXPLORE EMBER
+                </p>
+
+                <h2>
+                    Find your perfect
+                    <span>coffee moment.</span>
+                </h2>
+
+                <p class="section-description">
+                    From your first morning espresso to a slow evening dessert,
+                    discover something made for every kind of moment.
+                </p>
+
+            </div>
+
+            <div class="row g-3">
+                <div class="col-6 col-lg-3">
+
+                    <a href="#menu" class="category-card">
+
+                        <img src="images/category-coffee.jpg" alt="Specialty coffee">
+
+                        <div class="category-overlay">
+
+                            <div>
+                                <small>01</small>
+                                <h3>Coffee</h3>
+                            </div>
+
+                            <i class="bi bi-arrow-up-right"></i>
+
+                        </div>
+
+                    </a>
+
+                </div>
+
+                <div class="col-6 col-lg-3">
+
+                    <a href="#menu" class="category-card">
+
+                        <img src="images/category-breakfast.jpg" alt="Ember breakfast">
+
+                        <div class="category-overlay">
+
+                            <div>
+                                <small>02</small>
+                                <h3>Breakfast</h3>
+                            </div>
+
+                            <i class="bi bi-arrow-up-right"></i>
+
+                        </div>
+
+                    </a>
+
+                </div>
+
+
+
+                <div class="col-6 col-lg-3">
+
+                    <a href="#menu" class="category-card">
+
+                        <img src="images/category-dessert.jpg" alt="Coffee dessert">
+
+                        <div class="category-overlay">
+
+                            <div>
+                                <small>03</small>
+                                <h3>Desserts</h3>
+                            </div>
+
+                            <i class="bi bi-arrow-up-right"></i>
+
+                        </div>
+
+                    </a>
+
+                </div>
+
+
+
+                <div class="col-6 col-lg-3">
+
+                    <a href="#menu" class="category-card">
+
+                        <img src="images/category-cold.jpg" alt="Cold coffee">
+
+                        <div class="category-overlay">
+
+                            <div>
+                                <small>04</small>
+                                <h3>Cold Drinks</h3>
+                            </div>
+
+                            <i class="bi bi-arrow-up-right"></i>
+
+                        </div>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="ember-story" id="story">
+
+        <div class="container py-5 py-lg-6">
+
+            <div class="row align-items-center g-5">
+
+                <!-- STORY CONTENT -->
+
+                <div class="col-lg-6">
+
+                    <div class="story-content">
+
+                        <p class="section-label">
+                            OUR STORY
+                        </p>
+
+                        <h2>
+                            Discover the story
+                            <span>behind every cup.</span>
+                        </h2>
+
+                        <p class="story-intro">
+                            At EMBER, coffee is more than a drink.
+                            It's a reason to slow down, connect, and
+                            enjoy the little moments that often pass us by.
+                        </p>
+
+                        <p class="story-text">
+                            We work closely with passionate growers,
+                            carefully select every bean, and roast in
+                            small batches to bring out the character
+                            hidden inside every origin.
+                        </p>
+
+                        <a href="#contact" class="story-link">
+                            Discover our story
+                            <i class="bi bi-arrow-up-right"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- STORY IMAGE -->
+
+                <div class="col-lg-6">
+
+                    <div class="story-image-wrapper">
+
+                        <img src="images/story-main.jpg" alt="Barista preparing coffee at Ember"
+                            class="story-main-image">
+
+                        <div class="story-image-card">
+
+                            <img src="images/story-small.jpg" alt="Ember coffee experience">
+
+                            <div>
+                                <small>THE EMBER WAY</small>
+                                <strong>
+                                    Made slowly.<br>
+                                    Enjoyed fully.
+                                </strong>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- STORY BOTTOM -->
+
+            <div class="row align-items-end story-bottom g-4">
+
+                <!-- SMALL IMAGE 1 -->
+
+                <div class="col-md-3">
+
+                    <img src="images/story-detail-1.jpg" alt="Coffee beans" class="story-detail-image">
+
+                </div>
+
+
+                <!-- SMALL IMAGE 2 -->
+
+                <div class="col-md-3">
+
+                    <img src="images/story-detail-2.jpg" alt="Barista pouring coffee" class="story-detail-image">
+
+                </div>
+
+
+                <!-- STATS -->
+
+                <div class="col-md-6">
+
+                    <div class="story-stats">
+
+                        <div class="story-stat">
+
+                            <strong>12+</strong>
+
+                            <span>
+                                Years of<br>
+                                Craft
+                            </span>
+
+                        </div>
+
+                        <div class="story-stat">
+
+                            <strong>24</strong>
+
+                            <span>
+                                Signature<br>
+                                Beans
+                            </span>
+
+                        </div>
+
+                        <div class="story-stat">
+
+                            <strong>8</strong>
+
+                            <span>
+                                Unique<br>
+                                Roasts
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- SIGNATURE PICKS -->
+    <section class="ember-signature py-5">
+        <div class="container py-lg-5">
+
+            <div class="row align-items-end mb-5 g-4">
+                <div class="col-lg-7">
+                    <p class="section-label">SIGNATURE PICKS</p>
+
+                    <h2 class="signature-title">
+                        A few favorites from
+                        <span>our menu.</span>
+                    </h2>
+                </div>
+
+                <div class="col-lg-5">
+                    <div class="signature-intro">
+                        <p class="section-description">
+                            A small taste of what awaits at EMBER.
+                            From beautifully balanced coffee to something
+                            sweet for the table.
+                        </p>
+
+                        <a href="menu.html" class="story-link">
+                            View Full Menu
+                            <i class="bi bi-arrow-up-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4">
+
+                <!-- CARD 1 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="menu-card">
+
+                        <div class="menu-image-wrapper">
+                            <img src="images/menu-cappuccino.jpg" alt="Cappuccino">
+
+                            <span class="menu-tag">SIGNATURE</span>
+                        </div>
+
+                        <div class="menu-card-body">
+                            <h3>Cappuccino</h3>
+
+                            <p>
+                                Rich espresso balanced with silky
+                                steamed milk and soft foam.
+                            </p>
+
+                            <div class="menu-card-footer">
+                                <strong>₹220</strong>
+
+                                <a href="menu.html" class="menu-add-btn">
+                                    <i class="bi bi-arrow-up-right"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- CARD 2 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="menu-card">
+
+                        <div class="menu-image-wrapper">
+                            <img src="images/menu-latte.jpg" alt="Honey Latte">
+
+                            <span class="menu-tag">FAVORITE</span>
+                        </div>
+
+                        <div class="menu-card-body">
+                            <h3>Honey Latte</h3>
+
+                            <p>
+                                Smooth espresso, creamy milk and
+                                a delicate touch of honey.
+                            </p>
+
+                            <div class="menu-card-footer">
+                                <strong>₹250</strong>
+
+                                <a href="menu.html" class="menu-add-btn">
+                                    <i class="bi bi-arrow-up-right"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- CARD 3 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="menu-card">
+
+                        <div class="menu-image-wrapper">
+                            <img src="images/menu-coldbrew.jpg" alt="Cold Brew">
+
+                            <span class="menu-tag">COLD</span>
+                        </div>
+
+                        <div class="menu-card-body">
+                            <h3>Cold Brew</h3>
+
+                            <p>
+                                Slow-steeped coffee with a smooth,
+                                naturally sweet finish.
+                            </p>
+
+                            <div class="menu-card-footer">
+                                <strong>₹260</strong>
+
+                                <a href="menu.html" class="menu-add-btn">
+                                    <i class="bi bi-arrow-up-right"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- CARD 4 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="menu-card">
+
+                        <div class="menu-image-wrapper">
+                            <img src="images/menu-tiramisu.jpg" alt="Tiramisu">
+
+                            <span class="menu-tag">DESSERT</span>
+                        </div>
+
+                        <div class="menu-card-body">
+                            <h3>Tiramisu</h3>
+
+                            <p>
+                                Espresso-soaked layers with mascarpone
+                                cream and cocoa.
+                            </p>
+
+                            <div class="menu-card-footer">
+                                <strong>₹280</strong>
+
+                                <a href="menu.html" class="menu-add-btn">
+                                    <i class="bi bi-arrow-up-right"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SPECIAL OFFERS -->
+    <section class="ember-offers">
+        <div class="container py-5 py-lg-6">
+
+            <div class="row g-0 offer-wrapper align-items-stretch">
+
+                <!-- IMAGE -->
+                <div class="col-lg-7">
+                    <div class="offer-image">
+                        <img src="images/offer.jpg" alt="Ember coffee and pastry">
+
+                        <div class="offer-badge">
+                            <span>THIS WEEK</span>
+                            <strong>20%</strong>
+                            <small>OFF</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CONTENT -->
+                <div class="col-lg-5">
+                    <div class="offer-content">
+
+                        <p class="section-label">
+                            EMBER SPECIAL
+                        </p>
+
+                        <h2>
+                            Slow mornings
+                            <span>taste better.</span>
+                        </h2>
+
+                        <p class="offer-description">
+                            Start your morning with a freshly brewed coffee
+                            paired with one of our freshly baked favorites.
+                        </p>
+
+                        <div class="offer-details">
+
+                            <div class="offer-detail">
+                                <i class="bi bi-cup-hot"></i>
+
+                                <div>
+                                    <strong>Any Coffee</strong>
+                                    <span>Cappuccino, Latte or Flat White</span>
+                                </div>
+                            </div>
+
+                            <div class="offer-detail">
+                                <i class="bi bi-cookie"></i>
+
+                                <div>
+                                    <strong>Any Pastry</strong>
+                                    <span>Croissant, Cinnamon Roll or Brownie</span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <a href="menu.html" class="btn ember-primary-btn">
+                            Explore the Menu
+                            <i class="bi bi-arrow-up-right"></i>
+                        </a>
+
+                        <p class="offer-note">
+                            Available Monday – Friday · 8:00 AM – 11:00 AM
+                        </p>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- VISIT EMBER -->
+    <section class="ember-visit" id="visit">
+        <div class="container py-5 py-lg-6">
+
+            <div class="row g-5 align-items-center">
+
+                <!-- LEFT CONTENT -->
+                <div class="col-lg-5">
+                    <div class="visit-content">
+
+                        <p class="section-label">VISIT EMBER</p>
+
+                        <h2>
+                            Your table is
+                            <span>waiting.</span>
+                        </h2>
+
+                        <p class="visit-description">
+                            Come for the coffee. Stay for the atmosphere.
+                            EMBER is designed for slow mornings, creative
+                            afternoons and conversations that run late.
+                        </p>
+
+                        <div class="visit-info">
+
+                            <div class="visit-info-item">
+                                <div class="visit-icon">
+                                    <i class="bi bi-geo-alt"></i>
+                                </div>
+
+                                <div>
+                                    <small>FIND US</small>
+                                    <strong>
+                                        24 Artisan Lane,<br>
+                                        Koregaon Park, Pune
+                                    </strong>
+                                </div>
+                            </div>
+
+                            <div class="visit-info-item">
+                                <div class="visit-icon">
+                                    <i class="bi bi-clock"></i>
+                                </div>
+
+                                <div>
+                                    <small>OPENING HOURS</small>
+                                    <strong>
+                                        Mon – Fri · 8:00 AM – 10:00 PM<br>
+                                        Sat – Sun · 9:00 AM – 11:00 PM
+                                    </strong>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="visit-buttons">
+                            <a href="#reserve" class="btn ember-primary-btn">
+                                Reserve a Table
+                                <i class="bi bi-arrow-up-right"></i>
+                            </a>
+
+                            <a href="#gallery" class="visit-gallery-link">
+                                Explore the space
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- RIGHT VISUAL -->
+                <div class="col-lg-7">
+                    <div class="visit-visual">
+
+                        <img src="images/visit-main.jpg" alt="EMBER cafe interior" class="visit-main-image">
+
+                        <div class="visit-floating-card">
+
+                            <img src="images/visit-small.jpg" alt="Coffee at Ember">
+
+                            <div>
+                                <span>THE EMBER SPACE</span>
+                                <strong>
+                                    Coffee, conversations<br>
+                                    & good company.
+                                </strong>
+                            </div>
+
+                        </div>
+
+                        <div class="visit-number">
+                            <span>EST.</span>
+                            <strong>2012</strong>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- RESERVATION CTA -->
+    <section class="ember-reserve" id="reserve">
+        <div class="container py-5 py-lg-6">
+
+            <div class="reserve-wrapper">
+
+                <div class="reserve-content">
+
+                    <p class="section-label">
+                        MAKE IT A MOMENT
+                    </p>
+
+                    <h2>
+                        Good coffee.
+                        <span>Good company.</span>
+                    </h2>
+
+                    <p>
+                        Whether it's your morning ritual, a catch-up with
+                        friends or an evening worth remembering, there's
+                        always a seat waiting at EMBER.
+                    </p>
+
+                    <div class="reserve-buttons">
+
+                        <a href="tel:+912012345678" class="btn ember-primary-btn">
+                            Reserve a Table
+                            <i class="bi bi-arrow-up-right"></i>
+                        </a>
+
+                        <a href="menu.html" class="btn ember-outline-btn">
+                            Explore Menu
+                        </a>
+
+                    </div>
+
+                    <div class="reserve-meta">
+                        <span>
+                            <i class="bi bi-clock"></i>
+                            Open daily
+                        </span>
+
+                        <span>
+                            <i class="bi bi-cup-hot"></i>
+                            Specialty coffee
+                        </span>
+
+                        <span>
+                            <i class="bi bi-heart"></i>
+                            Made with care
+                        </span>
+                    </div>
+
+                </div>
+
+                <div class="reserve-decoration">
+                    <div class="reserve-circle"></div>
+
+                    <img src="images/reserve-coffee.jpg" alt="Freshly brewed coffee">
+
+                    <div class="reserve-stamp">
+                        <i class="bi bi-cup-hot"></i>
+                        <span>BREWED<br>WITH<br>INTENTION</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <footer class="ember-footer">
+
+        <div class="container">
+
+            <div class="row g-4">
+
+                <div class="col-lg-5">
+
+                    <div class="footer-brand">
+                        EMBER
+                    </div>
+
+                    <p>
+                        Thoughtfully brewed coffee,
+                        beautifully slow moments.
+                    </p>
+
+                </div>
+
+
+                <div class="col-6 col-lg-2">
+
+                    <h6>Explore</h6>
+
+                    <a href="index.html">Home</a>
+                    <a href="menu.html">Menu</a>
+                    <a href="index.html#story">Our Story</a>
+
+                </div>
+
+
+                <div class="col-6 col-lg-2">
+
+                    <h6>Visit</h6>
+
+                    <a href="index.html#visit">Our Cafe</a>
+                    <a href="index.html#gallery">Gallery</a>
+                    <a href="index.html#reserve">Reserve</a>
+
+                </div>
+
+
+                <div class="col-lg-3">
+
+                    <h6>Follow EMBER</h6>
+
+                    <div class="footer-socials">
+
+                        <a href="#">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="bi bi-twitter-x"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                <span>
+                    © 2026 EMBER Coffee. All rights reserved.
+                </span>
+
+                <span>
+                    Crafted with intention.
+                </span>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <script src="script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+</body>
+
+</html>
